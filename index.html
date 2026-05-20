@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ball Pit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Three.js draws the 3D scene onto this canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Title shown in the top left corner -->
+  <div id="overlay">
+    <h1>Ball Pit</h1>
+    <p>Vectors &amp; Gravity in Three.js</p>
+  </div>
+
+  <!-- Load Three.js from a CDN using an import map so we can use ES6 imports -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="module" src="src/main.js"></script>
+
+</body>
+</html>
